@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Questions Interface</title>
-    <p>Math Questions Interface</p>
+    <title>Question Input</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="../src/index.js" type="module"></script>
+    <div class="container">
+        <textarea id="questionInput" placeholder="Enter your question here..."></textarea>
+        <div class="options">
+            <input type="text" class="optionInput" placeholder="Option 1">
+            <input type="text" class="optionInput" placeholder="Option 2">
+            <input type="text" class="optionInput" placeholder="Option 3">
+            <input type="text" class="optionInput" placeholder="Option 4">
+        </div>
+        <button id="addQuestionButton">Add Question</button>
+        <button id="saveQuestionsButton">Save Questions</button>
+        <button id="loadQuestionsButton">Load Questions</button>
+    </div>
+    <div id="questionsContainer"></div>
+    <script src="script.js"></script>
 </body>
 </html>
