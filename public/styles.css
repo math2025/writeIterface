@@ -4,12 +4,12 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #87ceeb; /* Changed to sky blue */
 }
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -27,6 +27,7 @@ body {
     border-radius: 4px;
     font-size: 16px;
     box-sizing: border-box;
+    cursor: text; /* Added to change the cursor */
 }
 
 .options {
@@ -42,6 +43,7 @@ body {
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
+    cursor: text; /* Added to change the cursor */
 }
 
 #addQuestionButton, #saveQuestionsButton, #loadQuestionsButton {
@@ -70,4 +72,20 @@ body {
     color: white;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.questionInput {
+    cursor: text; /* Added to change the cursor */
+}
+
+#downloadLatexButton, #downloadPdfButton, #saveProgressButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 20px;
 }
